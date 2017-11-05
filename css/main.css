@@ -1,3 +1,357 @@
-/*
- * Estilos de tu proyecto
- */
+/* reseteando el codigo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clase reutilizables */
+body {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* header */
+
+header{
+	background-image: url(../assets/images/hero.gif);
+  background-size: cover;
+  height: 120vh;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.container-nav {
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 40px 0;
+  width: 90%;
+}
+
+header figure {
+  display: inline-block;
+}
+
+header figure img {
+  width: 70px;
+}
+
+.menu {
+  display: inline-block;
+  float: right;
+  overflow: auto;
+  width: 40%;
+}
+
+.menu ul {
+  color: #fff;
+  list-style: none;
+  padding-top: 1em;
+}
+
+.menu ul li {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 5px 27px;
+}
+
+.menu ul li:last-child {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 17px;
+}
+
+
+.square-white {
+  background-color: #fff;
+  float: right;
+  width: 40%;
+}
+
+.square-white h2 {
+  color: #352384;
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 500;
+  padding-bottom: 14px;
+}
+
+.texto-square-white {
+  padding: 90px 0 65px 90px;
+}
+
+.square-white .texto-square-white p.subtitle {
+  color: #352384;
+  font-weight: 400;
+  letter-spacing: -.5px;
+  padding-bottom: 25px;
+}
+
+.square-white .texto-square-white form {
+  border-bottom: 1px solid  #352384;
+  width: 85%;
+}
+
+.square-white .texto-square-white form input {
+  border: none;
+  font-size: 1em;
+  padding: 10px 0;
+  
+}
+
+form input::placeholder {
+  color: rgb(210, 208, 210);
+  font-weight:100;
+}
+
+.botones .become {
+  background-color: #FF00BF;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 15px 15px;
+  margin: 40px 20px 40px 0px;
+}
+
+.botones .sign {
+  border: none;
+  background-color: #fff;
+  color: #b9bec6;
+  font-size: 16px;
+  font-weight:100;
+  text-decoration: underline;
+}
+
+.texto-square-white .texto-bajo {
+  color: rgb(121, 121, 121);
+  font-size: 10px;
+}
+
+.texto-bajo p a {
+  color: #FF00BF;
+  line-height: 3em;
+  text-decoration: none;
+}
+
+#services  {
+  background: linear-gradient(#691b84, #2B1E66);
+  overflow: auto;
+}
+
+.container-services {
+  margin: 0 auto;
+  overflow: auto;
+  padding-top: 6.250em;
+  padding-bottom: 6.250em;
+  width: 85%;
+}
+
+.text-services {
+  color:#FFFFFF;
+  float: left;
+  margin-left: 4em;
+  width: 40%;
+}
+
+.container-services .text-services h3 {
+  font-size: 28px;
+  font-weight: 400;
+  padding: 10px 0; 
+}
+
+.container-services .text-services p {
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+}
+
+
+.container-services figure img {
+  float: right;
+  margin-right: 5em;
+  width: 40%;
+}
+
+/* PARTE 2 - LUCERO */
+
+/* clases reutilizables */
+
+.to-uppercase {
+  text-transform: uppercase;
+}
+
+/* VIDEOS AND CAPTIONS */
+
+.part1,
+.part2,
+.part3 {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  width: 100%;
+}
+
+.left-box {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 75px;
+  margin-right: 75%;
+  position: absolute;
+}
+
+.right-box {
+  display: inline-block;
+  float: right;
+  margin-left: 75%;
+  margin-right: 75px;
+  margin-top: 50px; 
+}
+
+.part1 a,
+.part2 a,
+.part3 a {
+  color: #333447;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+
+.part1 h3,
+.part2 h3,
+.part3 h3 {
+  color: #333447;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.part1 p,
+.part2 p,
+.part3 p {
+  color: #333447;
+  font-size: 16px;
+  margin-top: 30px;
+  line-height: 25px;
+}
+
+.right-video {
+  height: 0;
+  padding-bottom: 35%;
+  position: relative;
+}
+
+.left-video {
+  height: 0;
+  padding-bottom: 35%;
+  position: relative;
+}
+
+.right-video iframe {
+  height: 100%;
+  left: 30%;
+  position: absolute;
+	top: 0;
+	width: 70%;	
+}
+
+.left-video iframe {
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  position: absolute;
+	top: 0;
+	width: 65%;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #333447;
+  color: #fff;
+}
+
+footer .top-footer {
+  overflow: auto;
+}
+
+footer .top-footer .menu-footer h3 {
+  font-weight: 400;
+}
+
+.column {
+  float: left;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 60px;
+  padding-top: 80px;
+  width: 20%;
+}
+
+.column1 {
+  padding-left: 100px;
+  width: 28%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FF00BF;
+  text-decoration: underline;
+}
+
+footer ul {
+  display: inline-block;
+  float: right;
+  list-style: none;
+}
+
+footer img {
+  display: inline-block;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  width: 160px;
+}
+
+.social {
+  height: 40px;
+  padding-bottom: 60px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.social i {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  margin: 50px;
+  padding: 10px 10px;
+}
+
+footer hr {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.bottom-footer {
+  font-family: inherit;
+  margin-top: 50px;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  text-align: center;
+}
